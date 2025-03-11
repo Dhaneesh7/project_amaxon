@@ -1,0 +1,14 @@
+.Searchbar
+{
+    color:white;    
+    background-color: black;
+    
+}
+input{
+    margin-left: 60%;
+}
+button
+{
+    background-color: rgb(212, 212, 235);
+    
+}

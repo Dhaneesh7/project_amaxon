@@ -1,0 +1,15 @@
+body{
+
+    border-color: black;
+}
+.card{
+    border: 1px solid black;
+    width: 30%;
+    display:inline-flex;
+}
+.cart{
+    border: 1px solid black;
+    width: 30%;
+    display:inline-flex;
+
+}
