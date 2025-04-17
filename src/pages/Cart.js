@@ -22,7 +22,7 @@ const removeCart = (id) => {
 
             <h3>{item.name}</h3>
             <p>Price: ${item.price}</p>
-            <button onClick={/*() => dispatch(REMOVE_FROM_CART(item.id))*/removeCart(item.id)}>Remove</button>
+            <button onClick={/*() => dispatch(REMOVE_FROM_CART(item.id))*/()=>removeCart(item.id)}>Remove</button>
           </div>
         ))
       )}
