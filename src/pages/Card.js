@@ -3,6 +3,8 @@ import { Provider } from "react-redux";
 import { useDispatch } from "react-redux";
 import { ADD_TO_CART } from "./Store"
 import { addToCart } from "./Store";
+import { addToWishlist } from "./Store";
+
 export const Card = ({ data }) => {
   const dispatch = useDispatch();
 
@@ -13,6 +15,10 @@ export const Card = ({ data }) => {
     });
   };
 
+const handleWishlist = () => {
+dispatch(addToWishlist(product));
+}
+
   return (
     <provider>
     <div className="card">
@@ -21,6 +27,8 @@ export const Card = ({ data }) => {
       <div>{data.price}</div>
       <div>
         <button onClick={handleCart}>Add to Cart</button>
+
+  <button onClick={handleWishlist}>Add to Wishlist</button>
       </div>
     </div>
 </provider>  );
