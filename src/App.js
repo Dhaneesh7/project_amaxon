@@ -22,8 +22,9 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="Cart" element={<Cart />} />
-        </Routes>
   <Route path="/wishlist" element={<Wishlist />} />
+
+        </Routes>
       </Router>
     </AuthProvider>
     // </Provider>
