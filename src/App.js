@@ -23,6 +23,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="Cart" element={<Cart />} />
         </Routes>
+  <Route path="/wishlist" element={<Wishlist />} />
       </Router>
     </AuthProvider>
     // </Provider>
