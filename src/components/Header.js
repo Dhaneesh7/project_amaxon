@@ -33,6 +33,9 @@ const Header = () => {
               <li>
                 <Link to="/cart" className="cart" >cart</Link>
               </li>
+<li>
+                <Link to="/wishlist" className="cart" >wishlist</Link>
+              </li>
               <li>
                 <button onClick={handleLogout} className="Logout">
                   Logout
@@ -50,6 +53,10 @@ const Header = () => {
               <li>
                 <Link to={"/Cart"}>cart</Link>
               </li>
+<li>
+                <Link to={"/Wishlist"}>wishlist</Link>
+              </li>
+
             </>
           )}
         </ul>
