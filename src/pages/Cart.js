@@ -5,7 +5,13 @@ import "./Card.css"
 function Cart() {
   const cart = useSelector((state) => state.cart);  
   const dispatch = useDispatch();
-
+  
+const removeCart = () => {
+    dispatch({
+      type: REMOVE_FROM_CART, 
+      payload: id,    
+    });
+  };
   return (
     <div>
       <h1>Shopping Cart</h1>
