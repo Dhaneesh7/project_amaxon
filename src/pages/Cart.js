@@ -6,7 +6,7 @@ function Cart() {
   const cart = useSelector((state) => state.cart);  
   const dispatch = useDispatch();
   
-const removeCart = () => {
+const removeCart = (id) => {
     dispatch({
       type: REMOVE_FROM_CART, 
       payload: id,    
